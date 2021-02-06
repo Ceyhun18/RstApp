@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestoranActivity">
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardview"
+    android:layout_width="wrap_content"
+    android:layout_height="350dp"
+    android:background="@drawable/card_view"
+    >
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginBottom="8dp"
+
+
+        />
+</androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/SliderDots"
+        android:layout_width="125dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/cardview"
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="2dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintVertical_bias="0.37" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/restoran_activity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SliderDots"
+        android:text="Neolit Şadlıq Sarayı"
+        android:layout_margin="15dp"
+        android:textSize="22dp"
+        android:textColor="@color/design_default_color_on_secondary"/>
+
+    <TextView
+        android:id="@+id/restoran_activity_azn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restoran_activity_location"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="24dp"
+        android:text="70 AZN"
+        android:textSize="18dp"
+        android:textColor="@color/design_default_color_on_secondary"/>
+
+    <TextView
+        android:id="@+id/restoran_activity_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restoran_activity_name"
+        android:text="Babək Prospekti"
+        android:layout_marginStart="15dp"
+        android:textSize="18dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_on_black_24dp"
+        android:layout_below="@+id/restoran_activity_name"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/restoran_activity_location"/>
+
+    <ImageView
+        android:id="@+id/restoran_activity_phone_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_phone"
+        android:layout_below="@+id/restoran_activity_location"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        />
+    <TextView
+        android:id="@+id/restoran_activity_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restoran_activity_location"
+        android:layout_toEndOf="@+id/restoran_activity_phone_icon"
+        android:text="050 822 81 26"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="5dp"
+        android:textSize="17dp"
+        android:textColor="@color/design_default_color_on_secondary"
+        />
+
+    <TextView
+        android:id="@+id/restoran_zal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restoran_activity_phone"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorAccent"
+        android:text="  Zallar"
+
+        android:textColor="@color/divider_color"
+        android:textSize="18dp" />
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/hall_recyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/restoran_zal"
+       android:layout_marginStart="10dp"
+       android:layout_marginEnd="10dp"
+       android:layout_marginTop="14dp"
+       android:textColor="@color/design_default_color_on_secondary"
+       android:textSize="14dp"/>
+
+
+
+    <TextView
+        android:id="@+id/restoran_tedbir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hall_recyclerView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorAccent"
+        android:text="  Tədbirlər"
+
+        android:textColor="@color/divider_color"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/dott"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/restoran_tedbir"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/dot"/>
+
+    <TextView
+        android:id="@+id/event_txt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restoran_tedbir"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/dott"
+        android:text="Toy"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="14dp" />
+
+
+
+
+    <TextView
+        android:id="@+id/restoran_servis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_txt_view"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorAccent"
+        android:text="  Servis və Hədiyyələr"
+        android:textColor="@color/divider_color"
+        android:textSize="18dp" />
+
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/restoran_ansanmbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restoran_servis"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/design_default_color_on_secondary"
+           android:textSize="14dp" />
+
+
+
+
+
+
+    <Button
+        android:id="@+id/xeritede_bax"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_search"
+        android:layout_below="@+id/restoran_ansanmbl"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textColor="@color/divider"
+        android:text="Xərİtədə bax"
+        android:textSize="14dp"
+        />
+
+    <com.like.LikeButton
+        android:id="@+id/favourite_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_favorite_border_black_24dp"
+        android:layout_below="@+id/SliderDots"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginTop="19dp"
+
+
+        app:icon_size="30dp"
+        app:icon_type="heart"
+
+
+
+        />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:visibility="visible"/>
+
+</RelativeLayout>
+
+    </ScrollView>

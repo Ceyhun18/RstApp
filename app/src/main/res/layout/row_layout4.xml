@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="10dp"
+    android:background="@drawable/milk_color"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/relative2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:background="@drawable/search_bg"
+        >
+
+        <ImageView
+            android:layout_width="172dp"
+            android:layout_height="115dp"
+            android:background="@drawable/search_bg"
+            android:src="@drawable/neolit"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/restoran_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative2"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="10dp"
+        android:text="Neolit Şadlıq Sarayı"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:id="@+id/restoran_azn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restoran_name"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="10dp"
+        android:text="70 AZN"
+        android:textColor="@color/colorAccent"
+        android:textSize="12dp"
+        />
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="3dp"
+        android:layout_below="@id/restoran_azn"
+        android:layout_toEndOf="@+id/location_text"
+        android:src="@drawable/ic_location_on_black_24dp"/>
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+
+        android:layout_below="@id/restoran_name"
+        android:layout_marginStart="48dp"
+        android:text="Atatürk Prospekti"
+        android:textColor="@color/colorAccent"
+        android:textSize="13dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/aciq_hava_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/restoran_recyclerview"
+        android:layout_margin="10dp"
+        android:text="Açıq havada restoranlar"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/aciq_hava_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:layout_below="@+id/aciq_hava_text"
+        android:layout_marginTop="3dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/canli_musiqili"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/aciq_hava_recyclerview"
+        android:layout_margin="10dp"
+        android:text="Canlı Musiqili Restoranlar"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/canli_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:layout_below="@+id/canli_musiqili"
+        android:layout_marginTop="3dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/deniz_kenari_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/canli_recyclerview"
+        android:layout_margin="10dp"
+        android:text="Dəniz Kənarı Restoranlar"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/denizkenari_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:layout_below="@+id/deniz_kenari_text"
+        android:layout_marginTop="3dp"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
+
+</ScrollView>

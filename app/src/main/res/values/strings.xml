@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Şadlıq Palaces</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="all">Bütün</string>
+    <string name="wedding">Toy</string>
+    <string name="birthday">Ad günü</string>
+    <string name="engagement">Nişan</string>
+    <string name="henna">Xına</string>
+</resources>
